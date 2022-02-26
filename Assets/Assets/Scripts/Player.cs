@@ -12,4 +12,12 @@ public class Player : MonoBehaviour
     {
         rb.velocity = new Vector2(Input.GetAxisRaw("Horizontal"), 0) * speed * Time.fixedDeltaTime;
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.CompareTag("Tronco"))
+        {
+            Debug.Log("hit");
+        }
+    }
 }

@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 9198476248244399762}
   m_Layer: 0
   m_Name: Tronco
-  m_TagString: Untagged
+  m_TagString: Tronco
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
