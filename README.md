@@ -1,2 +1,2 @@
 # Esquiva troncos
-Mini juego 2d hecho en Unity
+Mi primer mini juego 2d hecho en Unity
