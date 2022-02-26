@@ -17,7 +17,8 @@ public class Player : MonoBehaviour
     {
         if(collision.CompareTag("Tronco"))
         {
-            Debug.Log("hit");
+            //Debug.Log("hit");
+            Destroy(gameObject);
         }
     }
 }
