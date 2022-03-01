@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Tronco
   - Limit
+  - Goal
   layers:
   - Default
   - TransparentFX
