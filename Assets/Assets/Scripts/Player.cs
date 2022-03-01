@@ -45,12 +45,21 @@ public class Player : MonoBehaviour
         Debug.Log("ready to impulse");
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if(collision.CompareTag("Tronco"))
+    //private void OnTriggerEnter2D(Collider2D collision)
+    //{
+    //    if(collision.CompareTag("Tronco"))
+    //    {
+    //        //Debug.Log("hit");
+    //        Destroy(gameObject);
+    //    }
+        /*if (collision.CompareTag("Limit"))
         {
-            //Debug.Log("hit");
-            Destroy(gameObject);
-        }
-    }
+            Debug.Log("limite");
+            //rb.velocity = Vector2.zero;
+            if(!moveReady)
+            {
+                Destroy(gameObject);
+            }
+        }*/
+    //}
 }
