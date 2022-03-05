@@ -9,9 +9,25 @@ public class Goal : MonoBehaviour
 
     public Rigidbody2D rb;
 
+    private bool moving = true;
+
     void FixedUpdate()
     {
-        rb.velocity = new Vector2(0, -1) * speed * Time.fixedDeltaTime;
+
+        if (moving)
+        {
+            rb.velocity = new Vector2(0, -1) * speed * Time.fixedDeltaTime;
+        }
+
+        /*if (Input.GetButtonDown("Cancel"))
+        {
+            moving = moving ? false : true;
+            if (moving == false)
+            {
+                rb.velocity = Vector2.zero;
+            }
+            Debug.Log(moving);
+        }*/
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
