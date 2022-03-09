@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour
     //para patron observer
     public static Action GamePause;
 
-    public bool gamePause = false;
+    public static bool GameIsPaused = false;
 
     private void Awake()
     {
@@ -20,12 +20,30 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    /*private void Update()
+    private void Update()
     {
-        if (Input.GetButtonDown("Cancel"))
+        if (Input.GetButtonUp("Cancel"))
         {
-            Debug.Log("press escape");
-            gamePause = gamePause ? false : true;
+            if (GameIsPaused)
+            {
+                Resume();
+            }
+            else
+            {
+                Pause();
+            }
         }
-    }*/
+    }
+
+    private void Resume()
+    {
+        Time.timeScale = 1f;
+        GameIsPaused = false;
+    }
+
+    private void Pause()
+    {
+        Time.timeScale = 0f;
+        GameIsPaused = true;
+    }
 }
