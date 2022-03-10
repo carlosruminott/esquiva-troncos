@@ -12,6 +12,8 @@ public class GameManager : MonoBehaviour
 
     public static bool GameIsPaused = false;
 
+    [SerializeField] GameObject uiDocument;
+
     private void Awake()
     {
         if (instance == null)
@@ -39,11 +41,13 @@ public class GameManager : MonoBehaviour
     {
         Time.timeScale = 1f;
         GameIsPaused = false;
+        uiDocument.SetActive(false);
     }
 
     private void Pause()
     {
         Time.timeScale = 0f;
         GameIsPaused = true;
+        uiDocument.SetActive(true);
     }
 }
