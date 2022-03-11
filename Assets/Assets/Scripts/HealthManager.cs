@@ -8,6 +8,8 @@ public class HealthManager : MonoBehaviour
 
     public int playerLife = 3;
 
+    [SerializeField] GameObject uiGameOverScreen;
+
     private void Awake()
     {
         if(instance == null)
@@ -22,6 +24,7 @@ public class HealthManager : MonoBehaviour
         if(playerLife == 0)
         {
             Destroy(gameObject);
+            uiGameOverScreen.SetActive(true);
         }
     }
 }
