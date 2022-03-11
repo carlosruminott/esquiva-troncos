@@ -37,7 +37,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    private void Resume()
+    public void Resume()
     {
         Time.timeScale = 1f;
         GameIsPaused = false;
