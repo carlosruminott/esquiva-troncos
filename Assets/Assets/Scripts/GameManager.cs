@@ -50,4 +50,13 @@ public class GameManager : MonoBehaviour
         GameIsPaused = true;
         uiDocument.SetActive(true);
     }
+
+    public void QuitGame()
+    {
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#else
+                    Application.Quit();
+#endif
+    }
 }

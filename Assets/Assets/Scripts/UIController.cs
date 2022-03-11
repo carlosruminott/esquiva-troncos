@@ -6,20 +6,29 @@ using UnityEngine.UIElements;
 public class UIController : MonoBehaviour
 {
 
-    public Button button;
+    public Button buttonResume, buttonQuit;
 
 
     private void OnEnable()
     {
         var root = GetComponent<UIDocument>().rootVisualElement;
 
-        button = root.Q<Button>("ButtonResume");
-        button.clicked += ButtonPressed;
+        buttonResume = root.Q<Button>("ButtonResume");
+        buttonResume.clicked += ButtonResume;
+
+        buttonQuit = root.Q<Button>("ButtonExit");
+        buttonQuit.clicked += ButtonQuit;
     }
 
-    void ButtonPressed()
+    void ButtonResume()
     {
         //Debug.Log("Pressed");
         GameManager.instance.Resume();
+    }
+
+    void ButtonQuit()
+    {
+        //Debug.Log("Pressed");
+        GameManager.instance.QuitGame();
     }
 }
