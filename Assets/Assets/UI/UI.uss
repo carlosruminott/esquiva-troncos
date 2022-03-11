@@ -1,0 +1,57 @@
+.button {
+    height: 100px;
+    width: 376px;
+    font-size: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top-left-radius: 51px;
+    border-bottom-left-radius: 51px;
+    border-top-right-radius: 51px;
+    border-bottom-right-radius: 51px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: rgba(47, 60, 159, 255);
+    color: rgba(255, 255, 255, 255);
+}
+
+.button:hover {
+    height: 100px;
+    width: 376px;
+    font-size: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top-left-radius: 51px;
+    border-bottom-left-radius: 51px;
+    border-top-right-radius: 51px;
+    border-bottom-right-radius: 51px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: rgb(114, 126, 214);
+}
+
+.button:active {
+    height: 100px;
+    width: 376px;
+    font-size: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top-left-radius: 51px;
+    border-bottom-left-radius: 51px;
+    border-top-right-radius: 51px;
+    border-bottom-right-radius: 51px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: rgb(35, 38, 55);
+}
