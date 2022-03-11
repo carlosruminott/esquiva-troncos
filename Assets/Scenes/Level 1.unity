@@ -350,7 +350,7 @@ GameObject:
   - component: {fileID: 418435078}
   - component: {fileID: 418435080}
   m_Layer: 5
-  m_Name: UIDocument
+  m_Name: UIPauseMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
