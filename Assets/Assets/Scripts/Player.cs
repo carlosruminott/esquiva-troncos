@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using FirstGearGames.SmoothCameraShaker;
 
 public class Player : MonoBehaviour
 {
@@ -13,6 +14,8 @@ public class Player : MonoBehaviour
     private bool moveReady = true;
     private bool impulseReady = true;
 
+    public ShakeData shakeData;
+
 
     void FixedUpdate()
     {
@@ -21,6 +24,7 @@ public class Player : MonoBehaviour
             moveReady = false;
             impulseReady = false;
             rb.velocity = new Vector2(Input.GetAxisRaw("Horizontal"), 0) * speed * impulse * Time.fixedDeltaTime;
+            CameraShakerHandler.Shake(shakeData);
             Instantiate(impulseFX, gameObject.transform.position, gameObject.transform.rotation);
             StartCoroutine(StopImpulse());
             StartCoroutine(ReadyToImpusle());
