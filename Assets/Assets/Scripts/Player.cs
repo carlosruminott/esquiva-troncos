@@ -16,10 +16,23 @@ public class Player : MonoBehaviour
 
     public ShakeData shakeData;
 
+    private void Update()
+    {
+        if (impulseReady && Input.GetButtonDown("Jump"))
+        {
+            moveReady = false;
+            impulseReady = false;
+            Instantiate(impulseFX, gameObject.transform.position, gameObject.transform.rotation);
+            rb.velocity = new Vector2(Input.GetAxisRaw("Horizontal"), 0) * speed * impulse * Time.deltaTime;
+            CameraShakerHandler.Shake(shakeData);
+            StartCoroutine(StopImpulse());
+            StartCoroutine(ReadyToImpusle());
+        }
+    }
 
     void FixedUpdate()
     {
-        if(impulseReady && Input.GetButtonDown("Jump"))
+        /*if(impulseReady && Input.GetButtonDown("Jump"))
         {
             moveReady = false;
             impulseReady = false;
@@ -28,7 +41,7 @@ public class Player : MonoBehaviour
             Instantiate(impulseFX, gameObject.transform.position, gameObject.transform.rotation);
             StartCoroutine(StopImpulse());
             StartCoroutine(ReadyToImpusle());
-        }
+        }*/
 
         if(moveReady)
         {
