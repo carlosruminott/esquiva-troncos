@@ -8,7 +8,7 @@ public class Player : MonoBehaviour
     public float impulse = 10f;
 
     public Rigidbody2D rb;
-    public GameObject impulseFBX;
+    public GameObject impulseFX;
 
     private bool moveReady = true;
     private bool impulseReady = true;
@@ -21,7 +21,7 @@ public class Player : MonoBehaviour
             moveReady = false;
             impulseReady = false;
             rb.velocity = new Vector2(Input.GetAxisRaw("Horizontal"), 0) * speed * impulse * Time.fixedDeltaTime;
-            Instantiate(impulseFBX, gameObject.transform.position, gameObject.transform.rotation);
+            Instantiate(impulseFX, gameObject.transform.position, gameObject.transform.rotation);
             StartCoroutine(StopImpulse());
             StartCoroutine(ReadyToImpusle());
         }
