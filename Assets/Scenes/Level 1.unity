@@ -1308,6 +1308,10 @@ PrefabInstance:
       value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 4250621941729174837, guid: 5b9a32dab210b14439d7d793e0858129, type: 3}
+      propertyPath: impulse
+      value: 51
+      objectReference: {fileID: 0}
+    - target: {fileID: 4250621941729174837, guid: 5b9a32dab210b14439d7d793e0858129, type: 3}
       propertyPath: impulseFX
       value: 
       objectReference: {fileID: 4879924528804368139, guid: d0e6b8515b5e55e4a8777e54b77fc3d6, type: 3}
