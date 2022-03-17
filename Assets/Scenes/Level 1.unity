@@ -336,6 +336,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbbe102f2195fe44dba5da41dea8363f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timeRemaining: 5
+  timerIsRunning: 0
 --- !u!4 &388816205 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7993812790435063442, guid: ff757328ce401dc4ca0132ffbed7cf1d, type: 3}
