@@ -20,6 +20,12 @@ public class UIController : MonoBehaviour
         buttonQuit.clicked += ButtonQuit;
     }
 
+    private void OnDisable()
+    {
+        buttonResume.clicked -= ButtonResume;
+        buttonQuit.clicked -= ButtonQuit;
+    }
+
     void ButtonResume()
     {
         //Debug.Log("Pressed");

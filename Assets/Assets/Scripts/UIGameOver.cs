@@ -20,6 +20,12 @@ public class UIGameOver : MonoBehaviour
         buttonQuit.clicked += ButtonQuit;
     }
 
+    private void OnDisable()
+    {
+        buttonPlayAgain.clicked -= ButtonPlayAgain;
+        buttonQuit.clicked -= ButtonQuit;
+    }
+
     void ButtonPlayAgain()
     {
         //Debug.Log("Pressed");
