@@ -27,6 +27,7 @@ public class Player : MonoBehaviour
             CameraShakerHandler.Shake(shakeData);
             StartCoroutine(StopImpulse());
             StartCoroutine(ReadyToImpusle());
+            UIPlayerPanel.instance.timerIsRunning = true;
         }
     }
 
