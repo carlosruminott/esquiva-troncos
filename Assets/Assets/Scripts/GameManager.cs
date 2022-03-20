@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -49,6 +50,14 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 0f;
         GameIsPaused = true;
         uiDocument.SetActive(true);
+    }
+
+    public void PlayAgain()
+    {
+        GameIsPaused = false;
+        Time.timeScale = 1f;
+        uiDocument.SetActive(false);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     public void QuitGame()

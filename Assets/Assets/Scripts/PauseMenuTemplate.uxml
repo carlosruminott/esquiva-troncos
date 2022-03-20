@@ -3,6 +3,7 @@
     <ui:VisualElement style="flex-grow: 1; align-items: center; justify-content: center;">
         <ui:VisualElement style="height: 584px; width: 817px; background-color: rgb(255, 255, 255); border-bottom-right-radius: 20px; border-top-left-radius: 20px; border-bottom-left-radius: 20px; border-top-right-radius: 20px; align-items: center; justify-content: center;">
             <ui:Button text="Resume Game" display-tooltip-when-elided="true" name="ButtonResume" class="button" />
+            <ui:Button text="Play Again" display-tooltip-when-elided="false" name="ButtonPlayAgain" class="button" />
             <ui:Button text="Exit Game" display-tooltip-when-elided="true" name="ButtonExit" class="button" />
         </ui:VisualElement>
     </ui:VisualElement>

@@ -6,7 +6,7 @@ using UnityEngine.UIElements;
 public class UIController : MonoBehaviour
 {
 
-    public Button buttonResume, buttonQuit;
+    public Button buttonResume, buttonPlayAgain, buttonQuit;
 
 
     private void OnEnable()
@@ -16,6 +16,9 @@ public class UIController : MonoBehaviour
         buttonResume = root.Q<Button>("ButtonResume");
         buttonResume.clicked += ButtonResume;
 
+        buttonPlayAgain = root.Q<Button>("ButtonPlayAgain");
+        buttonPlayAgain.clicked += ButtonPlayAgain;
+
         buttonQuit = root.Q<Button>("ButtonExit");
         buttonQuit.clicked += ButtonQuit;
     }
@@ -24,6 +27,12 @@ public class UIController : MonoBehaviour
     {
         buttonResume.clicked -= ButtonResume;
         buttonQuit.clicked -= ButtonQuit;
+    }
+
+    void ButtonPlayAgain()
+    {
+        //Debug.Log("Pressed");
+        GameManager.instance.PlayAgain();
     }
 
     void ButtonResume()
