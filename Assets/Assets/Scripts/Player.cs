@@ -18,7 +18,9 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
-        if (impulseReady && Input.GetButtonDown("Jump"))
+        bool isAxisPressed = Input.GetAxisRaw("Horizontal") != 0;
+
+        if (impulseReady && Input.GetButtonDown("Jump") && isAxisPressed)
         {
             moveReady = false;
             impulseReady = false;
