@@ -1407,6 +1407,10 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3603679126245020270, guid: ff757328ce401dc4ca0132ffbed7cf1d, type: 3}
+      propertyPath: shakeData
+      value: 
+      objectReference: {fileID: 11400000, guid: 4f2b088f8f02bc84dac11dcf5848ac43, type: 2}
     - target: {fileID: 7993812790435063442, guid: ff757328ce401dc4ca0132ffbed7cf1d, type: 3}
       propertyPath: m_RootOrder
       value: 0

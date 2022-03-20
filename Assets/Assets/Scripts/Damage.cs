@@ -1,13 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using FirstGearGames.SmoothCameraShaker;
 
 public class Damage : MonoBehaviour
 {
+    public ShakeData shakeData;
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
+            CameraShakerHandler.Shake(shakeData);
             HealthManager.instance.GetDamage(1);
         }
     }
