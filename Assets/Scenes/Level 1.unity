@@ -1110,6 +1110,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 100
   rb: {fileID: 1610086177}
+  uiGameOverScreen: {fileID: 874363925}
 --- !u!61 &1610086176
 BoxCollider2D:
   m_ObjectHideFlags: 0

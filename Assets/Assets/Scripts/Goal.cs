@@ -11,6 +11,8 @@ public class Goal : MonoBehaviour
 
     private bool moving = true;
 
+    [SerializeField] GameObject uiGameOverScreen;
+
     void FixedUpdate()
     {
 
@@ -19,15 +21,6 @@ public class Goal : MonoBehaviour
             rb.velocity = new Vector2(0, -1) * speed * Time.fixedDeltaTime;
         }
 
-        /*if (Input.GetButtonDown("Cancel"))
-        {
-            moving = moving ? false : true;
-            if (moving == false)
-            {
-                rb.velocity = Vector2.zero;
-            }
-            Debug.Log(moving);
-        }*/
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -35,6 +28,9 @@ public class Goal : MonoBehaviour
         if(collision.CompareTag("Player"))
         {
             Debug.Log("Finish");
+            uiGameOverScreen.SetActive(true);
+            UIGameOver.instance.title.text = "You Win!!";
+            //UIGameOver.instance.ShowThis();
         }
     }
 }

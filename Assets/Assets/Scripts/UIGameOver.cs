@@ -6,12 +6,25 @@ using UnityEngine.SceneManagement;
 
 public class UIGameOver : MonoBehaviour
 {
+    public static UIGameOver instance;
+
     public Button buttonPlayAgain, buttonQuit;
 
+    public Label title;
+
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
+    }
 
     private void OnEnable()
     {
         var root = GetComponent<UIDocument>().rootVisualElement;
+
+        title = root.Q<Label>("Title");
 
         buttonPlayAgain = root.Q<Button>("ButtonPlayAgain");
         buttonPlayAgain.clicked += ButtonPlayAgain;
@@ -37,4 +50,9 @@ public class UIGameOver : MonoBehaviour
         //Debug.Log("Pressed");
         GameManager.instance.QuitGame();
     }
+
+    /*public void ShowThis()
+    {
+        gameObject.SetActive(true);
+    }*/
 }
