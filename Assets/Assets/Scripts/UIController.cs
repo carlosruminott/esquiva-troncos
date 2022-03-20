@@ -25,6 +25,7 @@ public class UIController : MonoBehaviour
 
     private void OnDisable()
     {
+        buttonPlayAgain.clicked -= ButtonPlayAgain;
         buttonResume.clicked -= ButtonResume;
         buttonQuit.clicked -= ButtonQuit;
     }
