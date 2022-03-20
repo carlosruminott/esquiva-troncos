@@ -8,6 +8,8 @@ public class HealthManager : MonoBehaviour
 
     public int playerLife = 3;
 
+    public GameObject explotion;
+
     [SerializeField] GameObject uiGameOverScreen;
 
     private void Awake()
@@ -18,13 +20,26 @@ public class HealthManager : MonoBehaviour
         }
     }
 
+    private void Start()
+    {
+        UIPlayerPanel.instance.lifeLeft.text = playerLife.ToString() + " Life left";
+    }
+
     public void GetDamage(int damage)
     {
         playerLife -= damage;
-        if(playerLife == 0)
+        UIPlayerPanel.instance.lifeLeft.text = playerLife.ToString() + " Life left";
+        if (playerLife == 0)
         {
             Destroy(gameObject);
-            uiGameOverScreen.SetActive(true);
+            Instantiate(explotion, gameObject.transform.position, gameObject.transform.rotation);
+            //uiGameOverScreen.SetActive(true);
+            //ShowGameOverScreen();
         }
+    }
+
+    public void ShowGameOverScreen()
+    {
+        uiGameOverScreen.SetActive(true);
     }
 }

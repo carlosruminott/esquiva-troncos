@@ -8,6 +8,7 @@ public class UIPlayerPanel : MonoBehaviour
     public static UIPlayerPanel instance;
 
     public Label impulseTimer;
+    public Label lifeLeft;
 
     public float timeRemaining = 5;
     public bool timerIsRunning = false;
@@ -25,8 +26,7 @@ public class UIPlayerPanel : MonoBehaviour
         var root = GetComponent<UIDocument>().rootVisualElement;
 
         impulseTimer = root.Q<Label>("ImpulseTimer");
-        //impulseTimer.text = "Hola";
-
+        lifeLeft = root.Q<Label>("LifeLeft");
     }
 
 

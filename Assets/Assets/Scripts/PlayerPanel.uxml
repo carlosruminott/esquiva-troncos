@@ -1,3 +1,6 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <ui:Label text="Power Gas" display-tooltip-when-elided="true" name="ImpulseTimer" style="font-size: 40px; color: rgb(255, 255, 255); margin-left: 20px; margin-right: 20px; margin-top: 20px; margin-bottom: 20px;" />
+    <ui:VisualElement name="headContainer" style="flex-shrink: 1; flex-grow: 0; flex-direction: row; justify-content: flex-start;">
+        <ui:Label text="99 Life left" display-tooltip-when-elided="true" name="LifeLeft" style="font-size: 40px; margin-left: 20px; margin-right: 20px; margin-top: 20px; margin-bottom: 20px; color: rgb(255, 255, 255); width: 33%; position: absolute;" />
+        <ui:Label text="Power Gas" display-tooltip-when-elided="true" name="ImpulseTimer" style="font-size: 40px; color: rgb(255, 255, 255); margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; align-items: center; width: 100%; -unity-text-align: upper-center; padding-left: 20px; padding-right: 20px; padding-top: 20px; padding-bottom: 20px;" />
+    </ui:VisualElement>
 </ui:UXML>

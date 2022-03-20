@@ -879,6 +879,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerLife: 3
+  explotion: {fileID: 4879924528804368139, guid: 62686a5814d91c048b36bb8260f986b2, type: 3}
   uiGameOverScreen: {fileID: 874363925}
 --- !u!4 &1424949509 stripped
 Transform:
@@ -1371,7 +1372,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4250621941729174837, guid: 5b9a32dab210b14439d7d793e0858129, type: 3}
       propertyPath: impulse
-      value: 51
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 4250621941729174837, guid: 5b9a32dab210b14439d7d793e0858129, type: 3}
       propertyPath: impulseFX
