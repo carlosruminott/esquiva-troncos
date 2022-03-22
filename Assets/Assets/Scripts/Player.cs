@@ -6,7 +6,7 @@ using FirstGearGames.SmoothCameraShaker;
 public class Player : MonoBehaviour
 {
     public float speed = 100f;
-    public float impulse = 10f;
+    public float impulse = 15f;
 
     public Rigidbody2D rb;
     public GameObject impulseFX;
@@ -18,6 +18,8 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
+        CheckPlayerLife(HealthManager.instance.playerLife);
+
         bool isAxisPressed = Input.GetAxisRaw("Horizontal") != 0;
 
         if (impulseReady && Input.GetButtonDown("Jump") && isAxisPressed)
@@ -49,6 +51,25 @@ public class Player : MonoBehaviour
         if(moveReady)
         {
             rb.velocity = new Vector2(Input.GetAxisRaw("Horizontal"), 0) * speed * Time.fixedDeltaTime;
+        }
+    }
+
+    private void CheckPlayerLife(int life)
+    {
+        if(life == 3)
+        {
+            speed = 100f;
+            impulse = 15f;
+        }
+        if (life == 2)
+        {
+            speed = 70f;
+            impulse = 10f;
+        }
+        if (life == 1)
+        {
+            speed = 50f;
+            impulse = 8f;
         }
     }
 

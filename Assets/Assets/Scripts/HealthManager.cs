@@ -8,6 +8,8 @@ public class HealthManager : MonoBehaviour
 
     public int playerLife = 3;
 
+    [SerializeField] GameObject[] carVisualState = new GameObject[2];
+
     public GameObject explotion;
 
     [SerializeField] GameObject uiGameOverScreen;
@@ -28,11 +30,15 @@ public class HealthManager : MonoBehaviour
     public void GetDamage(int damage)
     {
         playerLife -= damage;
+        carVisualState[1].SetActive(false);
+        carVisualState[2].SetActive(false);
+        carVisualState[3].SetActive(false);
+        carVisualState[playerLife].SetActive(true);
         UIPlayerPanel.instance.lifeLeft.text = playerLife.ToString() + " Life left";
         if (playerLife == 0)
         {
-            Destroy(gameObject);
             Instantiate(explotion, gameObject.transform.position, gameObject.transform.rotation);
+            Destroy(gameObject);
             //uiGameOverScreen.SetActive(true);
             //ShowGameOverScreen();
         }
