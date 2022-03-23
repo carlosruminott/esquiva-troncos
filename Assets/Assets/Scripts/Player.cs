@@ -27,6 +27,7 @@ public class Player : MonoBehaviour
             moveReady = false;
             impulseReady = false;
             Instantiate(impulseFX, gameObject.transform.position, gameObject.transform.rotation);
+            gameObject.transform.rotation = Quaternion.Euler(0, 0, Input.GetAxisRaw("Horizontal") < 0 ? 90f : -90f);
             rb.velocity = new Vector2(Input.GetAxisRaw("Horizontal"), 0) * speed * impulse * Time.deltaTime;
             CameraShakerHandler.Shake(shakeData);
             StartCoroutine(StopImpulse());
@@ -79,6 +80,7 @@ public class Player : MonoBehaviour
         yield return new WaitForSeconds(0.2f);
         moveReady = true;
         rb.velocity = Vector2.zero;
+        gameObject.transform.rotation = Quaternion.Euler(0, 0, 0);
         Debug.Log("stop impulse");
     }
 
