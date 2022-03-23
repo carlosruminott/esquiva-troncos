@@ -18,7 +18,7 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
-        CheckPlayerLife(HealthManager.instance.playerLife);
+        CheckPlayerSpeed(HealthManager.instance.playerLife);
 
         bool isAxisPressed = Input.GetAxisRaw("Horizontal") != 0;
 
@@ -54,7 +54,7 @@ public class Player : MonoBehaviour
         }
     }
 
-    private void CheckPlayerLife(int life)
+    private void CheckPlayerSpeed(int life)
     {
         if(life == 3)
         {
@@ -64,13 +64,14 @@ public class Player : MonoBehaviour
         if (life == 2)
         {
             speed = 70f;
-            impulse = 10f;
+            impulse = 13f;
         }
         if (life == 1)
         {
             speed = 50f;
-            impulse = 8f;
+            impulse = 12f;
         }
+        UIPlayerPanel.instance.speed.text = "Speed: " + speed;
     }
 
     IEnumerator StopImpulse()

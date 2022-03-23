@@ -9,6 +9,7 @@ public class UIPlayerPanel : MonoBehaviour
 
     public Label impulseTimer;
     public Label lifeLeft;
+    public Label speed;
 
     public float timeRemaining = 5;
     public bool timerIsRunning = false;
@@ -27,6 +28,7 @@ public class UIPlayerPanel : MonoBehaviour
 
         impulseTimer = root.Q<Label>("ImpulseTimer");
         lifeLeft = root.Q<Label>("LifeLeft");
+        speed = root.Q<Label>("Speed");
     }
 
 
