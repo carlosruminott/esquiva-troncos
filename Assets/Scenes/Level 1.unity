@@ -663,7 +663,7 @@ GameObject:
   - component: {fileID: 734051354}
   - component: {fileID: 734051356}
   - component: {fileID: 734051355}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -837,7 +837,7 @@ GameObject:
   m_Component:
   - component: {fileID: 791532941}
   - component: {fileID: 791532942}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: tile-palete-2_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -975,6 +975,10 @@ PrefabInstance:
     - target: {fileID: 7664063690376712555, guid: 4751ba21077e07043b0623d176a156b6, type: 3}
       propertyPath: m_Name
       value: Light (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664063690376712555, guid: 4751ba21077e07043b0623d176a156b6, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4751ba21077e07043b0623d176a156b6, type: 3}
@@ -1211,7 +1215,7 @@ GameObject:
   m_Component:
   - component: {fileID: 915949541}
   - component: {fileID: 915949542}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: tile-palete-2_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1294,7 +1298,7 @@ GameObject:
   - component: {fileID: 948039377}
   - component: {fileID: 948039379}
   - component: {fileID: 948039378}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1463,7 +1467,7 @@ GameObject:
   m_Component:
   - component: {fileID: 991883579}
   - component: {fileID: 991883580}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: tile-palete-2_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1604,7 +1608,7 @@ GameObject:
   - component: {fileID: 1030563373}
   - component: {fileID: 1030563375}
   - component: {fileID: 1030563374}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cartel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1619,7 +1623,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1030563372}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.010385081, y: -3.32, z: 0.07897511}
+  m_LocalPosition: {x: 0.010385081, y: -3.32, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 791532941}
@@ -1734,7 +1738,7 @@ GameObject:
   - component: {fileID: 1086318329}
   - component: {fileID: 1086318331}
   - component: {fileID: 1086318330}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: LightContainer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1823,7 +1827,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6611897763312806904, guid: 4751ba21077e07043b0623d176a156b6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -7.2
+      value: -11.73
       objectReference: {fileID: 0}
     - target: {fileID: 6611897763312806904, guid: 4751ba21077e07043b0623d176a156b6, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1860,6 +1864,10 @@ PrefabInstance:
     - target: {fileID: 7664063690376712555, guid: 4751ba21077e07043b0623d176a156b6, type: 3}
       propertyPath: m_Name
       value: Light (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664063690376712555, guid: 4751ba21077e07043b0623d176a156b6, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4751ba21077e07043b0623d176a156b6, type: 3}
@@ -1945,7 +1953,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1525479095}
   - component: {fileID: 1525479096}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: tile-palete-2_6 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2293,7 +2301,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1666004874}
   - component: {fileID: 1666004875}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: tile-palete-2_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2477,6 +2485,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Light (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7664063690376712555, guid: 4751ba21077e07043b0623d176a156b6, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4751ba21077e07043b0623d176a156b6, type: 3}
 --- !u!1 &1766023961
@@ -2521,7 +2533,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1796642546}
   - component: {fileID: 1796642547}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: tile-palete-2_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2658,6 +2670,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Light
       objectReference: {fileID: 0}
+    - target: {fileID: 7664063690376712555, guid: 4751ba21077e07043b0623d176a156b6, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4751ba21077e07043b0623d176a156b6, type: 3}
 --- !u!1001 &4250621943009781135
@@ -2675,6 +2691,14 @@ PrefabInstance:
       propertyPath: carVisualState.Array.data[0]
       value: 
       objectReference: {fileID: 1665138571}
+    - target: {fileID: 3180979647165103158, guid: 5b9a32dab210b14439d7d793e0858129, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4250621941270437977, guid: 5b9a32dab210b14439d7d793e0858129, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 4250621941729174834, guid: 5b9a32dab210b14439d7d793e0858129, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -2722,6 +2746,18 @@ PrefabInstance:
     - target: {fileID: 4250621941729174838, guid: 5b9a32dab210b14439d7d793e0858129, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 4250621941729174838, guid: 5b9a32dab210b14439d7d793e0858129, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4443597888861230211, guid: 5b9a32dab210b14439d7d793e0858129, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5159071750633992916, guid: 5b9a32dab210b14439d7d793e0858129, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b9a32dab210b14439d7d793e0858129, type: 3}
