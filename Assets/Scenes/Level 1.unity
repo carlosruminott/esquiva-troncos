@@ -340,6 +340,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbbe102f2195fe44dba5da41dea8363f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timeRemaining: 5
+  timerIsRunning: 0
 --- !u!4 &388816205 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7993812790435063442, guid: ff757328ce401dc4ca0132ffbed7cf1d, type: 3}
@@ -526,6 +528,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ab8353b5ebd32545867da143199a814, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _shakeTechnique: 0
+  _makeDefaultOnEnable: 1
+  _limitMagnitude: 0
+  _positionalMagnitudeLimit: 10
+  _rotationalMagnitudeLimit: 3
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -656,6 +663,7 @@ GameObject:
   - component: {fileID: 734051354}
   - component: {fileID: 734051356}
   - component: {fileID: 734051355}
+  - component: {fileID: 734051357}
   m_Layer: 8
   m_Name: Text
   m_TagString: Untagged
@@ -702,7 +710,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: And wait 5 sec. to try again
+  m_text: Y a esperar 5 seg. para volver a usarlo
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -815,6 +823,52 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &734051357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 734051353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56eb0353ae6e5124bb35b17aff880f16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_StringReference:
+    m_TableReference:
+      m_TableCollectionName: GUID:202e06c1b7ee2bd40b5a896df00a54a6
+    m_TableEntryReference:
+      m_KeyId: 631016951808
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables:
+    - name: Cartel_2
+      variable:
+        id: 0
+  m_FormatArguments: []
+  m_UpdateString:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 734051355}
+        m_TargetAssemblyTypeName: TMPro.TMP_Text, Unity.TextMeshPro
+        m_MethodName: set_text
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
+  references:
+    version: 1
+    00000000:
+      type: {class: ObjectVariable, ns: UnityEngine.Localization.SmartFormat.PersistentVariables, asm: Unity.Localization}
+      data:
+        m_Value: {fileID: 734051355}
 --- !u!4 &756872026 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6611897763312806904, guid: 4751ba21077e07043b0623d176a156b6, type: 3}
@@ -1123,6 +1177,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65635ec6a81528145ba79ab6a3d3d624, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  uiDocument: {fileID: 0}
 --- !u!4 &863320709
 Transform:
   m_ObjectHideFlags: 0
@@ -1337,7 +1392,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Press spacebar + arrow
+  m_text: Presiona barra espaciadora + una flecha
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1470,13 +1525,32 @@ MonoBehaviour:
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
-    m_LocalVariables: []
+    m_LocalVariables:
+    - name: Cartel_1
+      variable:
+        id: 0
   m_FormatArguments: []
   m_UpdateString:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 948039378}
+        m_TargetAssemblyTypeName: TMPro.TMP_Text, Unity.TextMeshPro
+        m_MethodName: set_text
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
   references:
     version: 1
+    00000000:
+      type: {class: ObjectVariable, ns: UnityEngine.Localization.SmartFormat.PersistentVariables, asm: Unity.Localization}
+      data:
+        m_Value: {fileID: 948039378}
 --- !u!1 &991883578
 GameObject:
   m_ObjectHideFlags: 0
@@ -1667,6 +1741,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc5ba3b30d0f4be4d9825e7bd46ebab1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 100
+  rb: {fileID: 1030563375}
 --- !u!50 &1030563375
 Rigidbody2D:
   serializedVersion: 4
@@ -1814,6 +1890,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc5ba3b30d0f4be4d9825e7bd46ebab1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 100
+  rb: {fileID: 1086318330}
 --- !u!1001 &1353456707
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2201,6 +2279,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10d062e6a8946a64db6a8eba11176982, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 100
+  rb: {fileID: 1610086177}
+  uiGameOverScreen: {fileID: 874363925}
 --- !u!61 &1610086176
 BoxCollider2D:
   m_ObjectHideFlags: 0
