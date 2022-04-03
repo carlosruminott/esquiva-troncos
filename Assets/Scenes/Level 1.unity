@@ -340,8 +340,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbbe102f2195fe44dba5da41dea8363f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeRemaining: 5
-  timerIsRunning: 0
 --- !u!4 &388816205 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7993812790435063442, guid: ff757328ce401dc4ca0132ffbed7cf1d, type: 3}
@@ -528,11 +526,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ab8353b5ebd32545867da143199a814, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _shakeTechnique: 0
-  _makeDefaultOnEnable: 1
-  _limitMagnitude: 0
-  _positionalMagnitudeLimit: 10
-  _rotationalMagnitudeLimit: 3
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -1130,7 +1123,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65635ec6a81528145ba79ab6a3d3d624, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  uiDocument: {fileID: 418435077}
 --- !u!4 &863320709
 Transform:
   m_ObjectHideFlags: 0
@@ -1298,6 +1290,7 @@ GameObject:
   - component: {fileID: 948039377}
   - component: {fileID: 948039379}
   - component: {fileID: 948039378}
+  - component: {fileID: 948039380}
   m_Layer: 8
   m_Name: Text
   m_TagString: Untagged
@@ -1457,6 +1450,33 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &948039380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 948039376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56eb0353ae6e5124bb35b17aff880f16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_StringReference:
+    m_TableReference:
+      m_TableCollectionName: GUID:202e06c1b7ee2bd40b5a896df00a54a6
+    m_TableEntryReference:
+      m_KeyId: 490700705792
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  m_FormatArguments: []
+  m_UpdateString:
+    m_PersistentCalls:
+      m_Calls: []
+  references:
+    version: 1
 --- !u!1 &991883578
 GameObject:
   m_ObjectHideFlags: 0
@@ -1647,8 +1667,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc5ba3b30d0f4be4d9825e7bd46ebab1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 100
-  rb: {fileID: 1030563375}
 --- !u!50 &1030563375
 Rigidbody2D:
   serializedVersion: 4
@@ -1796,8 +1814,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc5ba3b30d0f4be4d9825e7bd46ebab1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 100
-  rb: {fileID: 1086318330}
 --- !u!1001 &1353456707
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2185,9 +2201,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10d062e6a8946a64db6a8eba11176982, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 100
-  rb: {fileID: 1610086177}
-  uiGameOverScreen: {fileID: 874363925}
 --- !u!61 &1610086176
 BoxCollider2D:
   m_ObjectHideFlags: 0
