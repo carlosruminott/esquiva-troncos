@@ -23,6 +23,12 @@ MonoBehaviour:
     m_SerializedLabels:
     - Locale-en
     - Preload
+  - m_GUID: f516fefdec514b743a42c0ea1b26cb48
+    m_Address: UIPLayerPanel_en
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    - Preload
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: ff5f9fac3dca41f4eb7584ca5d814c71, type: 2}
   m_SchemaSet:
