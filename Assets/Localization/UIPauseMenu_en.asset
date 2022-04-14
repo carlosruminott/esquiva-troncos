@@ -10,28 +10,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
-  m_Name: UIPLayerPanel_en
+  m_Name: UIPauseMenu_en
   m_EditorClassIdentifier: 
   m_LocaleId:
     m_Code: en
-  m_SharedData: {fileID: 11400000, guid: c3fd5e92929604642bf56a407406f3f1, type: 2}
+  m_SharedData: {fileID: 11400000, guid: 09ab3b390262e9444853c307d2dbb4c6, type: 2}
   m_Metadata:
     m_Items: []
   m_TableData:
-  - m_Id: 259674247168
-    m_Localized: Life Left
+  - m_Id: 36109455360
+    m_Localized: Resume Game
     m_Metadata:
       m_Items: []
-  - m_Id: 462036832256
-    m_Localized: Power Gas
+  - m_Id: 122243682304
+    m_Localized: Play Again
     m_Metadata:
       m_Items: []
-  - m_Id: 678798462976
-    m_Localized: Speed
-    m_Metadata:
-      m_Items: []
-  - m_Id: 3974569514405888
-    m_Localized: Power Gas Ready!
+  - m_Id: 176081768448
+    m_Localized: Exit Game
     m_Metadata:
       m_Items: []
   references:

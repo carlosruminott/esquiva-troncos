@@ -72,7 +72,7 @@ public class Player : MonoBehaviour
             speed = 50f;
             impulse = 12f;
         }
-        UIPlayerPanel.instance.speed.text = "Speed: " + speed;
+        UIPlayerPanel.instance.speedNumber.text = speed.ToString();
     }
 
     IEnumerator StopImpulse()

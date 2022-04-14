@@ -25,6 +25,10 @@ MonoBehaviour:
     m_Address: Assets/Localization/UIPLayerPanel Shared Data.asset
     m_ReadOnly: 1
     m_SerializedLabels: []
+  - m_GUID: 09ab3b390262e9444853c307d2dbb4c6
+    m_Address: Assets/Localization/UIPauseMenu Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: ff5f9fac3dca41f4eb7584ca5d814c71, type: 2}
   m_SchemaSet:

@@ -29,6 +29,12 @@ MonoBehaviour:
     m_SerializedLabels:
     - Locale-en
     - Preload
+  - m_GUID: fa428082bc4971840b6080ec931ff9f5
+    m_Address: UIPauseMenu_en
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    - Preload
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: ff5f9fac3dca41f4eb7584ca5d814c71, type: 2}
   m_SchemaSet:

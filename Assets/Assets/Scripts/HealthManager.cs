@@ -24,7 +24,7 @@ public class HealthManager : MonoBehaviour
 
     private void Start()
     {
-        UIPlayerPanel.instance.lifeLeft.text = playerLife.ToString() + " Life left";
+        UIPlayerPanel.instance.lifeLeftNumber.text = playerLife.ToString();
     }
 
     public void GetDamage(int damage)
@@ -34,7 +34,7 @@ public class HealthManager : MonoBehaviour
         carVisualState[2].SetActive(false);
         carVisualState[3].SetActive(false);
         carVisualState[playerLife].SetActive(true);
-        UIPlayerPanel.instance.lifeLeft.text = playerLife.ToString() + " Life left";
+        UIPlayerPanel.instance.lifeLeftNumber.text = playerLife.ToString();
         if (playerLife == 0)
         {
             Instantiate(explotion, gameObject.transform.position, gameObject.transform.rotation);

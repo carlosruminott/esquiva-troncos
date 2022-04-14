@@ -8,8 +8,8 @@ public class UIPlayerPanel : MonoBehaviour
     public static UIPlayerPanel instance;
 
     public Label impulseTimer;
-    public Label lifeLeft;
-    public Label speed;
+    public Label lifeLeftText, lifeLeftNumber;
+    public Label speedText, speedNumber;
 
     public float timeRemaining = 5;
     public bool timerIsRunning = false;
@@ -27,8 +27,10 @@ public class UIPlayerPanel : MonoBehaviour
         var root = GetComponent<UIDocument>().rootVisualElement;
 
         impulseTimer = root.Q<Label>("ImpulseTimer");
-        lifeLeft = root.Q<Label>("LifeLeft");
-        speed = root.Q<Label>("Speed");
+        lifeLeftText = root.Q<Label>("LifeLeftText");
+        lifeLeftNumber = root.Q<Label>("LifeLeftNumber");
+        speedText = root.Q<Label>("SpeedText");
+        speedNumber = root.Q<Label>("SpeedNumber");
     }
 
 
@@ -45,7 +47,8 @@ public class UIPlayerPanel : MonoBehaviour
             {
                 timeRemaining = 5;
                 timerIsRunning = false;
-                impulseTimer.text = "Power Gas Ready!";
+                var localization = GetComponent<LocalizationUIPlayerPanel>()._currentStringTable;
+                impulseTimer.text = localization["ImpulseTimerReady"].LocalizedValue;
             }
         }
     }

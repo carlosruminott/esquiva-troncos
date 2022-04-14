@@ -9,7 +9,7 @@ public class LocalizationUIPlayerPanel : MonoBehaviour
     [SerializeField]
     private LocalizedStringTable _localizedStringTable;
 
-    private StringTable _currentStringTable;
+    public StringTable _currentStringTable;
 
     private IEnumerator Start()
     {
@@ -21,8 +21,8 @@ public class LocalizationUIPlayerPanel : MonoBehaviour
         // At this point _currentStringTable can be used to
         // access our strings
         // 3. Retrieve the localized string     
-        UIPlayerPanel.instance.lifeLeft.text = _currentStringTable["LifeLeft"].LocalizedValue;
+        UIPlayerPanel.instance.lifeLeftText.text = _currentStringTable["LifeLeft"].LocalizedValue;
         UIPlayerPanel.instance.impulseTimer.text = _currentStringTable["ImpulseTimer"].LocalizedValue;
-        UIPlayerPanel.instance.speed.text = _currentStringTable["Speed"].LocalizedValue;
+        UIPlayerPanel.instance.speedText.text = _currentStringTable["Speed"].LocalizedValue;
     }
 }

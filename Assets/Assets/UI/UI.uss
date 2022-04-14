@@ -14,8 +14,8 @@
     margin-right: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
-    background-color: rgba(47, 60, 159, 255);
-    color: rgba(255, 255, 255, 255);
+    background-color: rgb(47, 60, 159);
+    color: rgb(255, 255, 255);
 }
 
 .button:hover {
@@ -54,4 +54,11 @@
     margin-top: 10px;
     margin-bottom: 10px;
     background-color: rgb(35, 38, 55);
+}
+
+.bottonContainerText {
+    align-items: stretch;
+}
+
+.speedText {
 }

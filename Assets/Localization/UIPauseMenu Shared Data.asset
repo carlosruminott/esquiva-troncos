@@ -10,25 +10,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
-  m_Name: UIPLayerPanel Shared Data
+  m_Name: UIPauseMenu Shared Data
   m_EditorClassIdentifier: 
-  m_TableCollectionName: UIPLayerPanel
-  m_TableCollectionNameGuidString: c3fd5e92929604642bf56a407406f3f1
+  m_TableCollectionName: UIPauseMenu
+  m_TableCollectionNameGuidString: 09ab3b390262e9444853c307d2dbb4c6
   m_Entries:
-  - m_Id: 259674247168
-    m_Key: LifeLeft
+  - m_Id: 36109455360
+    m_Key: ButtonResume
     m_Metadata:
       m_Items: []
-  - m_Id: 462036832256
-    m_Key: ImpulseTimer
+  - m_Id: 122243682304
+    m_Key: ButtonPlay
     m_Metadata:
       m_Items: []
-  - m_Id: 678798462976
-    m_Key: Speed
-    m_Metadata:
-      m_Items: []
-  - m_Id: 3974569514405888
-    m_Key: ImpulseTimerReady
+  - m_Id: 176081768448
+    m_Key: ButtonExit
     m_Metadata:
       m_Items: []
   m_Metadata:
@@ -40,4 +36,4 @@ MonoBehaviour:
     00000000:
       type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
       data:
-        m_CustomEpoch: 1648998313643
+        m_CustomEpoch: 1649946794440
