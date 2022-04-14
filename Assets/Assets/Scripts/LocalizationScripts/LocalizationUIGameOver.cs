@@ -36,6 +36,7 @@ public class LocalizationUIGameOver : MonoBehaviour
 
     private void SetUIText(StringTable table)
     {
+        _uiController.title.text = table["TitleMenu"].LocalizedValue;
         _uiController.buttonPlayAgain.text = table["ButtonPlay"].LocalizedValue;
         _uiController.buttonQuit.text = table["ButtonExit"].LocalizedValue;
     }
