@@ -11,6 +11,13 @@ public class LocalizationSelect : MonoBehaviour
 
     private void OnEnable()
     {
+        //si existe idioma elegido, saltea el menu de elección de idioma
+        int l = PlayerPrefs.GetInt("Locale");
+        if (l == 0 || l == 1)
+        {
+            SceneManager.LoadScene("Level 1");
+        }
+
         var root = GetComponent<UIDocument>().rootVisualElement;
 
         buttonEn = root.Q<Button>("ButtonEn");
