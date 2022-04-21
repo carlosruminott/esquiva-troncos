@@ -5,6 +5,7 @@ using UnityEngine.Localization.Tables;
 
 public class LocalizationUIPauseMenu : MonoBehaviour
 {
+
     [SerializeField]
     private LocalizedStringTable _localizedStringTable;
 

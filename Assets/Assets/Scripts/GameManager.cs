@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Localization.Settings;
 
 public class GameManager : MonoBehaviour
 {
@@ -21,6 +22,18 @@ public class GameManager : MonoBehaviour
         {
             instance = this;
         }
+        StartCoroutine(setLanguage());
+    }
+
+    public IEnumerator setLanguage()
+    {
+        // Wait for the localization system to initialize, loading Locales, preloading, etc.
+        yield return LocalizationSettings.InitializationOperation;
+
+        int i = PlayerPrefs.GetInt("Locale");
+
+        // This part changes the language
+        LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[i];
     }
 
     private void Update()

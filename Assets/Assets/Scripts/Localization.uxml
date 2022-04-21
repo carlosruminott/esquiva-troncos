@@ -1,0 +1,7 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="/Assets/Assets/UI/UI.uss" />
+    <ui:VisualElement style="flex-grow: 1; background-color: rgb(0, 0, 0); align-items: center; justify-content: center;">
+        <ui:Button text="English" display-tooltip-when-elided="true" name="ButtonEn" enable-rich-text="false" class="button" />
+        <ui:Button text="Español" display-tooltip-when-elided="true" name="ButtonEs" enable-rich-text="false" class="button" />
+    </ui:VisualElement>
+</ui:UXML>
