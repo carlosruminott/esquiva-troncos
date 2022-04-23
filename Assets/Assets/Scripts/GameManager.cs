@@ -67,10 +67,13 @@ public class GameManager : MonoBehaviour
 
     public void PlayAgain()
     {
-        GameIsPaused = false;
-        Time.timeScale = 1f;
-        uiDocument.SetActive(false);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        if(GameIsPaused == true)
+        {
+            GameIsPaused = false;
+            Time.timeScale = 1f;
+            uiDocument.SetActive(false);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        } 
     }
 
     public void QuitGame()

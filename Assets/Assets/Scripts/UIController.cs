@@ -32,7 +32,7 @@ public class UIController : MonoBehaviour
 
     void ButtonPlayAgain()
     {
-        //Debug.Log("Pressed");
+        Debug.Log("Pressed");
         GameManager.instance.PlayAgain();
     }
 
