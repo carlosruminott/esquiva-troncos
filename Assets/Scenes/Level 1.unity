@@ -2019,6 +2019,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7993812790435063442, guid: ff757328ce401dc4ca0132ffbed7cf1d, type: 3}
   m_PrefabInstance: {fileID: 1042270194}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1454662717 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 422175787161073184, guid: 5b9a32dab210b14439d7d793e0858129, type: 3}
+  m_PrefabInstance: {fileID: 4250621943009781135}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1465628181 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7993812790435063442, guid: ff757328ce401dc4ca0132ffbed7cf1d, type: 3}
@@ -2429,11 +2434,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1665138571 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3180979647165103158, guid: 5b9a32dab210b14439d7d793e0858129, type: 3}
-  m_PrefabInstance: {fileID: 4250621943009781135}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1666004873
 GameObject:
   m_ObjectHideFlags: 0
@@ -2830,17 +2830,9 @@ PrefabInstance:
       propertyPath: uiGameOverScreen
       value: 
       objectReference: {fileID: 874363925}
-    - target: {fileID: 1176126931, guid: 5b9a32dab210b14439d7d793e0858129, type: 3}
-      propertyPath: carVisualState.Array.data[0]
-      value: 
-      objectReference: {fileID: 1665138571}
-    - target: {fileID: 3180979647165103158, guid: 5b9a32dab210b14439d7d793e0858129, type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 4250621941270437977, guid: 5b9a32dab210b14439d7d793e0858129, type: 3}
-      propertyPath: m_Layer
-      value: 7
+    - target: {fileID: 422175787161073184, guid: 5b9a32dab210b14439d7d793e0858129, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4250621941729174834, guid: 5b9a32dab210b14439d7d793e0858129, type: 3}
       propertyPath: m_RootOrder
@@ -2886,21 +2878,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4250621941729174837, guid: 5b9a32dab210b14439d7d793e0858129, type: 3}
+      propertyPath: impusleFire
+      value: 
+      objectReference: {fileID: 1454662717}
     - target: {fileID: 4250621941729174838, guid: 5b9a32dab210b14439d7d793e0858129, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 4250621941729174838, guid: 5b9a32dab210b14439d7d793e0858129, type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 4443597888861230211, guid: 5b9a32dab210b14439d7d793e0858129, type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 5159071750633992916, guid: 5b9a32dab210b14439d7d793e0858129, type: 3}
-      propertyPath: m_Layer
-      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b9a32dab210b14439d7d793e0858129, type: 3}

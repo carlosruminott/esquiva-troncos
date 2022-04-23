@@ -10,7 +10,8 @@ public class Player : MonoBehaviour
 
     public Rigidbody2D rb;
     public GameObject impulseFX;
-
+    public GameObject impusleFire;
+ 
     private bool moveReady = true;
     private bool impulseReady = true;
 
@@ -27,6 +28,7 @@ public class Player : MonoBehaviour
             moveReady = false;
             impulseReady = false;
             Instantiate(impulseFX, gameObject.transform.position, gameObject.transform.rotation);
+            impusleFire.SetActive(true);
             gameObject.transform.rotation = Quaternion.Euler(0, 0, Input.GetAxisRaw("Horizontal") < 0 ? 90f : -90f);
             rb.velocity = new Vector2(Input.GetAxisRaw("Horizontal"), 0) * speed * impulse * Time.deltaTime;
             CameraShakerHandler.Shake(shakeData);
@@ -81,6 +83,7 @@ public class Player : MonoBehaviour
         moveReady = true;
         rb.velocity = Vector2.zero;
         gameObject.transform.rotation = Quaternion.Euler(0, 0, 0);
+        impusleFire.SetActive(false);
         Debug.Log("stop impulse");
     }
 
