@@ -27,8 +27,12 @@ public class Player : MonoBehaviour
         {
             moveReady = false;
             impulseReady = false;
-            Instantiate(impulseFX, gameObject.transform.position, gameObject.transform.rotation);
-            impusleFire.SetActive(true);
+            //Instantiate(impulseFX, gameObject.transform.position, gameObject.transform.rotation);
+            //impusleFire.SetActive(true);
+            impusleFire.transform.position = new Vector3(impusleFire.transform.position.x, impusleFire.transform.position.y, 0);
+            //impusleFire.transform.localScale = new Vector3(0.05f, 0.2f, 0.1f);
+            //impusleFire.transform.GetChild(0).gameObject.transform.localScale = new Vector3(0.05f, 0.2f, 0.1f);
+            //Debug.Log(impusleFire.transform.GetChild(0).gameObject.transform.localScale);
             gameObject.transform.rotation = Quaternion.Euler(0, 0, Input.GetAxisRaw("Horizontal") < 0 ? 90f : -90f);
             rb.velocity = new Vector2(Input.GetAxisRaw("Horizontal"), 0) * speed * impulse * Time.deltaTime;
             CameraShakerHandler.Shake(shakeData);
@@ -83,7 +87,8 @@ public class Player : MonoBehaviour
         moveReady = true;
         rb.velocity = Vector2.zero;
         gameObject.transform.rotation = Quaternion.Euler(0, 0, 0);
-        impusleFire.SetActive(false);
+        //impusleFire.SetActive(false);
+        impusleFire.transform.position = new Vector3(impusleFire.transform.position.x, impusleFire.transform.position.y, -10);
         Debug.Log("stop impulse");
     }
 

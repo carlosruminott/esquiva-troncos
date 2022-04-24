@@ -2832,7 +2832,11 @@ PrefabInstance:
       objectReference: {fileID: 874363925}
     - target: {fileID: 422175787161073184, guid: 5b9a32dab210b14439d7d793e0858129, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 422175787161073185, guid: 5b9a32dab210b14439d7d793e0858129, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -10
       objectReference: {fileID: 0}
     - target: {fileID: 4250621941729174834, guid: 5b9a32dab210b14439d7d793e0858129, type: 3}
       propertyPath: m_RootOrder
